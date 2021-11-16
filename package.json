@@ -2,8 +2,8 @@
   "name": "oapi-doc-publisher",
   "version": "0.0.1",
   "author": "Alessandro Romanelli",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "start": "node -r module-alias/register ./dist --env=production",
@@ -55,10 +55,8 @@
       "@typescript-eslint/no-unsafe-assignment": 0
     }
   },
-  "eslintIgnore": [
-    "build.ts"
-  ],
   "dependencies": {
+    "abstract-syntax-tree": "^2.20.4",
     "command-line-args": "^5.2.0",
     "cookie-parser": "^1.4.5",
     "dotenv": "^10.0.0",
@@ -68,18 +66,22 @@
     "http-status-codes": "^2.1.4",
     "jet-logger": "^1.0.6",
     "jsonfile": "^6.1.0",
+    "lodash": "^4.17.21",
+    "meriyah": "^4.2.0",
     "module-alias": "^2.2.2",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "static-analysis": "^2.1.1"
   },
   "devDependencies": {
     "@types/command-line-args": "^5.2.0",
     "@types/cookie-parser": "^1.4.2",
-    "@types/express": "^4.17.13",
+    "@types/express": "^4.17.1",
     "@types/find": "^0.2.1",
     "@types/fs-extra": "^9.0.13",
     "@types/jasmine": "^3.10.2",
     "@types/jest": "^27.0.2",
     "@types/jsonfile": "^6.0.1",
+    "@types/lodash": "^4.14.177",
     "@types/morgan": "^1.9.3",
     "@types/node": "^16.11.7",
     "@types/supertest": "^2.0.11",
